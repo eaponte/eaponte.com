@@ -594,7 +594,7 @@ img.resume-img {
 	text-align: center;
 }
 
-.linkedin-img {
+.linkedin-img, .github-img {
 	max-width: 300px;
 	width: 85%;
 	margin: 40px auto;
@@ -602,7 +602,7 @@ img.resume-img {
 	
 }
 
-.linkedin-img img {
+.linkedin-img img, .github-img img {
 	max-width: 300px;
 	width: 100%;
 	box-shadow: 0 0 25px #777;
