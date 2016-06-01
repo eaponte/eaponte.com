@@ -1,17 +1,15 @@
 // Smooth Scrolling
 
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-		e.preventDefault();
+$('a[href^="#"]').on('click',function(e) {
+	e.preventDefault();
 
-		var target = this.hash;
-		var $target = $(target);
+	var target = this.hash;
+	var $target = $(target);
 
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 900, 'swing', function () {
-			window.location.hash = target;
-		});
+	$('html, body').stop().animate({
+		'scrollTop': $target.offset().top
+	}, 900, 'swing', function () {
+		window.location.hash = target;
 	});
 });
 
@@ -24,7 +22,7 @@ $(document).ready(function(){
 	// Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
 	
 	// applies parallax to any class="parallax" ex. --> <section class="parallax" data-speed="5">
-	$('.parallax').each(function(){
+	$('.parallax').each(function() {
 		var $bgobj = $(this); // assigning the object
 		
 		$window.scroll(function() {
@@ -42,42 +40,48 @@ $(document).ready(function(){
 		}); // end window scroll
 	});
 
+// Check Window Width and Close Side Nav If Not in Mobile View
+
+function checkWindowWidth() {
+	var windowWidth = $(window).width();
+
+	if (windowWidth > 835) {
+		$("#side-nav").css("right", "-200px");
+	}
+}
+
+checkWindowWidth();
+
+$(window).resize(checkWindowWidth);
+
 // Open Side Nav
 
-$(".side-menu-btn").click(function()
-{
-	$("#side-nav").show("slide", { direction: "right" }, 300);
-}
-);
+$(".side-menu-btn").click(function() {
+	$("#side-nav").animate({right: "0"});
+});
 
 // Close Side Nav
 
-function closeSideNav() {
-	$("#side-nav").hide("slide", { direction: "right" }, 300);
-}
+$(".sideNav").click(function() {
+	$("#side-nav").animate({right: "-200px"});
+});
 
 // Fade In for Heading
 
 $(".header-container").animate({opacity: 1, top: "30%"}, 1000);
 
-// Open Panel
+// Open Card
 
-function openThisPanel(thisPanel) {
-	$(thisPanel).show("slide", { direction: "up" }, 700);
-}
+$("[data-link]").click(function(e) {
+	e.preventDefault();
+	thisCard = $(this).data("link");
+	$(thisCard).slideDown("slow");
+});
 
-// Close All
+// Hide All Cards on Back Button
 
-function closeAll() {
-	$("#about-more").hide("slide", { direction: "up" }, 700);
-	$("#rates").hide("slide", { direction: "up" }, 700);
-}
-
-// Hide All Panels on Close Button
-
-$(".back-btn").click(function()
-{
-	closeAll();
+$(".back-btn").click(function() {
+	$("#rates, #about-more").slideUp("slow");
 });
 
 // Email Address

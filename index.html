@@ -41,14 +41,14 @@
 
 	<nav id="side-nav">
 		
-		<div class="side-back-btn" onclick="closeSideNav()"></div>
+		<div class="side-back-btn sideNav"></div>
 
 		<ul>
-			<li><a href="#websites" onclick="closeSideNav()">websites</a></li>
-			<li><a href="#resume" onclick="closeSideNav()">resume</a></li>
-			<li><a href="#projects" onclick="closeSideNav()">projects</a></li>
-			<li><a href="#about" onclick="closeSideNav()">about</a></li>
-			<li><a href="#contact" onclick="closeSideNav()">contact</a></li>
+			<li><a href="#websites" class="sideNav">websites</a></li>
+			<li><a href="#resume" class="sideNav">resume</a></li>
+			<li><a href="#projects" class="sideNav">projects</a></li>
+			<li><a href="#about" class="sideNav">about</a></li>
+			<li><a href="#contact" class="sideNav">contact</a></li>
 		</ul>
 
 	</nav> <!-- end side-nav -->
@@ -72,7 +72,7 @@
 			
 			<h2 class="section-heading">Websites</h2>
 
-			<div id="rates-link"><a href="#" onclick="openThisPanel('#rates')">Web Development Rates &amp; Pricing</a></div>
+			<div id="rates-link"><a href="" data-link="#rates">Web Development Rates &amp; Pricing</a></div>
 
 			<section class="card" id="rates">
 				
@@ -230,7 +230,7 @@
 			<div class="btn-desc">
 
 				<span>Read</span>
-				<div class="blue-btn" onclick="openThisPanel('#about-more')"></div>
+				<div class="blue-btn" data-link="#about-more"></div>
 				<span>More</span>
 
 			</div> <!-- end btn-desc -->
@@ -329,7 +329,6 @@
 	</div> <!-- end container -->
 
 	<script src="js/jquery-min.js"></script>
-	<script src="js/jquery-ui-min.js"></script>
 
 	<script src="js/wow.js"></script>
 	<script>

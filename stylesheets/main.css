@@ -196,7 +196,7 @@ strong {
 
 /* Right Side Nav */
 
-.side-menu-btn, #side-nav {
+.side-menu-btn {
 	display: none;
 }
 
@@ -204,8 +204,8 @@ strong {
 	z-index: 15;
 	position: fixed;
 	top: 0;
-	right: 0;
-	width: 55%;
+	right: -200px;
+	width: 200px;
 	height: 100%;
 	color: #fff;
 	font-size: 32px;
