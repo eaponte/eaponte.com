@@ -5,11 +5,12 @@ $('a[href^="#"]').on('click',function(e) {
 
 	var target = this.hash;
 	var $target = $(target);
+	var targetOffset = $target.offset().top - 100;
 
 	$('html, body').stop().animate({
-		'scrollTop': $target.offset().top
+		'scrollTop': targetOffset
 	}, 900, 'swing', function () {
-		window.location.hash = target;
+		window.location.hash = targetOffset;
 	});
 });
 
