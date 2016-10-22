@@ -645,7 +645,7 @@ img.resume-img {
 
 	.desc {
 		width: 250px;
-		font-size: 12px !important;
+		font-size: 14px !important;
 		margin: auto;
 	}
 
@@ -761,12 +761,12 @@ img.resume-img {
 	}
 
 	.section-sub-heading {
-	text-align: center;
-	font-size: 30px;
-	letter-spacing: 3px;
-	padding-top: 60px;
-	padding-bottom: 20px;
-}
+		text-align: center;
+		font-size: 30px;
+		letter-spacing: 3px;
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
 
 	.img-list {
 		text-align: center;
@@ -785,7 +785,7 @@ img.resume-img {
 
 	#portfolio ul li span {
 		display: block;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	/*#projects ul li span {
