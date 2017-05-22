@@ -12,48 +12,37 @@
 
 	<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
 
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv-min.js"></script>
-	<![endif]-->
-
 </head>
 <body>
 	
-	<nav id="top-nav">
+	<nav id="top-nav" class="bg-color2">
 		
-		<h1><a href="#top">ed aponte</a></h1>
+		<a href="#top"><h1>ea</h1></a>
 
-		<ul>
-			<li><a href="#portfolio">portfolio</a></li>
-			<li><a href="#resume">resume</a></li>
-			<li><a href="#about">about</a></li>
-			<li><a href="#contact">contact</a></li>
-		</ul>
+		<div id="nav-bar">
 
-		<span class="side-menu-btn float-right">Menu<img src="images/menu-icon.png" alt="Menu Icon"></span>
+			<div class="close-nav-btn">&times;</div>
+
+			<ul id="nav-list">
+				<li><a href="#testimonials">testimonials</a></li>
+				<li><a href="#clients">clients</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#resume">resume</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+
+		</div> <!-- nav-bar -->
+
+		<div class="nav-menu-btn float-right"><span></span></div>
 
 		<div class="clr"></div>
 
-		<div id="head-shot-img" class="img-round"></div>
-
 	</nav> <!-- end top-nav -->
 
-	<nav id="side-nav">
-		
-		<div class="side-back-btn sideNav"></div>
-
-		<ul>
-			<li><a href="#portfolio" class="sideNav">portfolio</a></li>
-			<li><a href="#resume" class="sideNav">resume</a></li>
-			<li><a href="#about" class="sideNav">about</a></li>
-			<li><a href="#contact" class="sideNav">contact</a></li>
-		</ul>
-
-	</nav> <!-- end side-nav -->
-
 	<div class="container">
-
-		<header id ="top" class="main-header parallax" data-speed="-5">
+		
+		<header id ="top" class="main-header bg-color1 parallax" data-speed="-5">
 
 			<section class="header-container">
 			
@@ -66,265 +55,425 @@
 
 		</header>
 
-		<section id="portfolio" class="second sections">
+		<section id="testimonials" class="sections bg-color1">
+			
+			<h2 class="section-heading">Testimonials</h2>
+
+			<ul class="testimonial-posts">
+				<li>
+					<img src="images/al-gore-i.jpg" alt="Al Gore">
+					<p>
+						<q>Without Ed Aponte's help, I could never have invented the internet.</q>
+						<span>Al Gore - Inventor of the internet</span>
+					</p>
+				</li>
+				<li>
+					<img src="images/bill-gates-i.jpg" alt="Bill Gates">
+					<p>
+						<q>Ed said CTRL-ALT-DEL was a bad idea. I should have listened to Ed Aponte.</q>
+						<span>Bill Gates - Creator of CTRL-ALT-DEL</span>
+					</p>
+				</li>
+				<li>
+					<img src="images/steve-jobs-i.jpg" alt="Steve Jobs">
+					<p>
+						<q>Good artists copy, great artists steal. I stole all my ideas from Ed Aponte.</q>
+						<span>Steve Jobs - A great artist</span>
+					</p>
+				</li>
+				<li>
+					<img src="images/most-interesting-man-in-the-world-i.jpg" alt="Dos Equis Spokesperson">
+					<p>
+						<q>Ed Aponte is actually 'The Most Interesting Man in the World'.</q>
+						<span>The Second Most Interesting Man in the World - Dos Equis Spokesperson</span>
+					</p>
+				</li>
+			</ul>
+
+		</section> <!-- testimonials -->
+
+		<section id="clients" class="sections bg-color2 font-color1">
+			
+			<h2 class="section-heading">Clients</h2>
+
+			<ul class="client-posts">
+				<li><img src="images/logo-timeinc.png" alt="Time Inc"></li>
+				<li><img src="images/logo-mcdonalds.png" alt="McDonald's"></li>
+				<li><img src="images/logo-couponology.png" alt="Couponology"></li>
+				<li><img src="images/logo-novartis.png" alt="Novartis"></li>
+				<li><img src="images/logo-talkpoint.png" alt="TalkPoint"></li>
+			</ul>
+
+		</section> <!-- clients -->
+
+		<section id="portfolio" class="sections bg-color1 bg-img1 font-color1 parallax" data-speed="-5">
 			
 			<h2 class="section-heading">Portfolio</h2>
 
-			<div id="rates-link"><a href="" data-link="#rates">Web Development Rates &amp; Pricing</a></div>
-
-			<section class="card" id="rates">
-				
-				<div class="card-content">
-
-					<h3>Rates &amp; Pricing</h3>
-
-					<h3>WEB DESIGN FOR SMALL BUSINESS &amp; PERSONAL USE</h3>
-
-						<p>
-							I develop websites for:
-
-							<ul>
-								<li>Small Businesses</li>
-								<li>Self Employed</li>
-								<li>Freelancers</li>
-								<li>Writers &amp; Authors</li>
-								<li>Start Ups</li>
-								<li>Online Business Cards</li>
-								<li>Portfolio and Resume Sites</li>
-								<li>Personal Use</li>
-							</ul>
-
-						</p>
-
-					<h3>INTRODUCTORY PRICING</h3>
-
-						<p class="note">
-							<strong>Please Note:</strong> All rates are subject to change without notice.
-						</p>
-
-						<p>
-							Minimum cost is <strong>$500.00</strong> for a static website (<strong>$700.00</strong> for a <sup><strong>*</strong></sup>WordPress site)<br>
-							This cost includes:<br>
-
-							<ul>
-								<li>a 1 to 4 page website or</li>
-								<li>1-page layout with up to 4 sections</li>
-								<li><strong>$250.00</strong> due up front (<strong>$400.00</strong> due up front for a WordPress site)</li>
-							</ul>
-
-						</p>
-
-						<p>
-							Each additional page (of a multi-page site) or section (of a one-page layout) is <strong>$90.00</strong>
-						</p>
-
-						<p>
-							Major additions/deletions/changes is charged at <strong>$35.00</strong> per hour.<br>
-							Minor edits/additions/deletions to color, content and images (of a static website) are <strong>ALWAYS FREE!</strong>
-						</p>
-
-						<p>
-							Responsive Design - Websites that adjust to look good on tablets, smartphones and iPhones is included <strong>FREE</strong> with your purchase!
-						</p>
-
-						<p class="note">
-							<sup><strong>*</strong></sup> Unlike a static website, WordPress sites allow you, the customer, to make edits to your own content. You can add or remove paragraphs, insert or delete images, create news events, or make blog entries. The increased cost of developing a WordPress site allows you to have more control over your own content without incurring the additional costs of having a developer make content related changes to your site in the future.
-						</p>
-
-						<p class="note">
-							<strong>Please Note:</strong> Any additional costs for website hosting and domain name purchase are your responsibility and is charged to you by the web hosting company you choose.  These are reasonable costs that can start for as little as $40 per YEAR on average (or about $3.50 per month).
-						</p>
-
-					<div class="card-footer">
-					
-						<div class="back-btn"><a href="#portfolio"></a></div>
-
+			<ul class="portfolio-posts">
+				<li>
+					<h3>Don D'Auria</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/don-dauria-desktop.png" alt="DonDauriaEditorial.com Desktop">
+						<img class="mobile-img" src="images/don-dauria-mobile.png" alt="DonDauriaEditorial.com Mobile">
 					</div>
+					<div class="view-btn-container"><a href="http://www.dondauriaeditorial.com" target="_blank" class="view-btn">View</a></div>
+					<p>wordpress &bull; html5 &bull; css3 &bull; js &bull; responsive &bull; jquery &bull; php</p>
+				</li>
+				<li>
+					<h3>Rosanna Chiofalo</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/rosanna-chiofalo-desktop.png" alt="RosannaChiofalo.com Desktop">
+						<img class="mobile-img" src="images/rosanna-chiofalo-mobile.png" alt="RosannaChiofalo.com Mobile">
+					</div>
+					<div class="view-btn-container"><a href="http://www.rosannachiofalo.com" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; responsive &bull; bootstrap &bull; jquery &bull; php</p>
+				</li>
+				<li>
+					<h3>Gregg Prosser</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/gregg-prosser-desktop.png" alt="GreggProsser.com Desktop">
+						<img class="mobile-img" src="images/gregg-prosser-mobile.png" alt="GreggProsser.com Mobile">
+					</div>
+					<div class="view-btn-container"><a href="http://www.greggprosser.com" target="_blank" class="view-btn">View</a></div>
+					<p>wordpress &bull; html5 &bull; css3 &bull; js &bull; responsive &bull; jquery &bull; php</p>
+				</li>
+				<li>
+					<h3>RCA Creative Works</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/rca-desktop.png" alt="RCACreativeWorks.com Desktop">
+						<img class="mobile-img" src="images/rca-mobile.png" alt="RCACreativeWorks.com Mobile">
+					</div>
+					<div class="view-btn-container"><a href="http://www.rcacreativeworks.com" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; responsive &bull; media queries &bull; jquery</p>
+				</li>
+				<li>
+					<h3>Paul Dinas</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/paul-dinas-desktop.png" alt="PaulDinasBookEditor.com Desktop">
+						<img class="mobile-img" src="images/paul-dinas-mobile.png" alt="PaulDinasBookEditor.com Mobile">
+					</div>
+					<div class="view-btn-container"><a href="http://www.pauldinasbookeditor.com" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; responsive &bull; media queries</p>
+				</li>
+				<li>
+					<h3>Cloud-Based OS</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/cloud-os-desktop.png" alt="Cloud OS Desktop">
+					</div>
+					<div class="view-btn-container"><a href="https://eaponte.github.io/leo-os/" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; jquery &bull; jquery-ui &bull; windows</p>
+				</li>
+				<li>
+					<h3>Calculator</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/calculator-desktop.png" alt="Calculator App">
+					</div>
+					<div class="view-btn-container"><a href="https://eaponte.github.io/calculator/" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; material design inspired</p>
+				</li>
+				<li>
+					<h3>Sketchpad</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/sketchpad-desktop.png" alt="Sketchpad App">
+					</div>
+					<div class="view-btn-container"><a href="https://eaponte.github.io/sketchpad/" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; jquery &bull; html5 canvas tag</p>
+				</li>
+				<li>
+					<h3>Email Client Demo</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/email-client-desktop.png" alt="Email Client App">
+					</div>
+					<div class="view-btn-container"><a href="https://eaponte.github.io/email-client-demo/" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; jquery</p>
+				</li>
+				<li>
+					<h3>Maps</h3>
+					<div class="img-container">
+						<img class="desktop-img" src="images/maps-desktop.png" alt="Maps App">
+					</div>
+					<div class="view-btn-container"><a href="https://eaponte.github.io/maps/" target="_blank" class="view-btn">View</a></div>
+					<p>html5 &bull; css3 &bull; js &bull; open street map &bull; open layers &bull; geolocation &bull; nominatim search</p>
+				</li>
+			</ul>
 
-				</div> <!-- end card-content -->
+		</section> <!-- portfolio -->
 
-			</section> <!-- end rates -->
-
-			<h2 class="section-sub-heading top-padding-90">Websites</h2>
-
-			<div class="img-list">
-
-				<ul>
-					<li class="align-right wow fadeInUp" data-wow-offset="100"><span><a href="http://www.rosannachiofalo.com" target="_blank">RosannaChiofalo.com</a><span class="desc">html5 &bull; css3 &bull; js &bull; responsive &bull; bootstrap &bull; jquery &bull; php</span></span><img src="images/rosanna-chiofalo-mobile.png" alt="RosannaChiofalo.com Mobile" class="img-mobile"><img src="images/rosanna-chiofalo-desktop.png" alt="RosannaChiofalo.com Desktop"></li>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/gregg-prosser-mobile.png" alt="GreggProsser.com Mobile" class="img-mobile"><img src="images/gregg-prosser-desktop.png" alt="GreggProsser.com Desktop"><span><a href="http://www.greggprosser.com" target="_blank">GreggProsser.com</a><span class="desc">wordpress &bull; html5 &bull; css3 &bull; js &bull; responsive &bull; jquery &bull; php</span></span></li>
-					<li class="align-right wow fadeInUp" data-wow-offset="100"><span><a href="http://www.rcacreativeworks.com" target="_blank">RCACreativeWorks.com</a><span class="desc">html5 &bull; css3 &bull; js &bull; responsive &bull; media queries &bull; jquery</span></span><img src="images/rca-mobile.png" alt="RCACreativeWorks.com Mobile" class="img-mobile"><img src="images/rca-desktop.png" alt="RCACreativeWorks.com Desktop"></li>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/paul-dinas-mobile.png" alt="PaulDinasBookEditor.com Mobile" class="img-mobile"><img src="images/paul-dinas-desktop.png" alt="PaulDinasBookEditor.com Desktop"><span><a href="http://www.pauldinasbookeditor.com" target="_blank">PaulDinasBookEditor.com</a><span class="desc">html5 &bull; css3 &bull; js &bull; responsive &bull; media queries</span></span></li>
-					<li class="align-right wow fadeInUp" data-wow-offset="100"><span><a href="http://www.vidpal.net" target="_blank">VidPal.net</a><span class="desc">html5 &bull; css3 &bull; js &bull; jquery &bull; php &bull; mysql</span></span><img src="images/vidpal-mobile.png" alt="VidPal.net Mobile" class="img-mobile"><img src="images/vidpal-desktop.png" alt="VidPal.net Desktop"></li>
-				</ul>
-
-			</div> <!-- end img-list -->
-
-			<h2 class="section-sub-heading top-padding-90">Web Apps</h2>
-
-			<div class="img-list">
-
-				<ul>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/cloud-os-desktop.png" alt="Cloud OS Desktop"><span><a href="https://eaponte.github.io/leo-os/" target="_blank">Cloud-Based Desktop OS</a><span class="desc">html5 &bull; css3 &bull; js &bull; jquery &bull; jquery-ui &bull; windows</span></span></li>
-					<li class="align-right wow fadeInUp" data-wow-offset="100"><img src="images/calculator-desktop.png" alt="Calculator App"><span><a href="https://eaponte.github.io/calculator/" target="_blank">Calculator</a><span class="desc">html5 &bull; css3 &bull; js &bull; material design inspired</span></span></li>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/sketchpad-desktop.png" alt="Sketchpad App"><span><a href="https://eaponte.github.io/sketchpad/" target="_blank">Sketchpad</a><span class="desc">html5 &bull; css3 &bull; js &bull; jquery &bull; html5 canvas tag</span></span></li>
-					<li class="align-right wow fadeInUp" data-wow-offset="100"><img src="images/email-client-desktop.png" alt="Email Client App"><span><a href="https://eaponte.github.io/email-client-demo/" target="_blank">Email Client Demo</a><span class="desc">html5 &bull; css3 &bull; js &bull; jquery</span></span></li>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/maps-desktop.png" alt="Maps App"><span><a href="https://eaponte.github.io/maps/" target="_blank">Maps</a><span class="desc">html5 &bull; css3 &bull; js &bull; open street map &bull; open layers &bull; geolocation &bull; nominatim search</span></span></li>
-				</ul>
-
-			</div> <!-- end img-list -->
-
-			<h2 class="section-sub-heading top-padding-90">Hardware Projects</h2>
-
-			<div class="img-list">
-
-				<ul>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/odroid.jpg" alt="Odroid"><span><a href="https://docs.google.com/document/d/1Z6RWNwLJHofTYX6BZ0Xa-phym9FxA7rZ00MTl0TEyJA/edit?usp=sharing" target="_blank">Odroid-U3</a></span></li>
-					<li class="align-right wow fadeInUp" data-wow-offset="100"><span><a href="https://docs.google.com/document/d/1l32X1E9yrmjT9VHrocUja9svoh3Zfz0JSjfam7wAT-E/edit?usp=sharing" target="_blank">Raspberry Pi</a></span><img src="images/raspberry-pi.jpg" alt="Raspberry Pi"></li>
-					<li class="wow fadeInUp" data-wow-offset="100"><img src="images/minipc.jpg" alt="Mini PC"><span><a href="https://docs.google.com/document/d/1BsrzwKDWxhUM4i85_GHqpSXW9zh3DIOluZ9or2SMQRM/edit?usp=sharing" target="_blank">Linux mini-PC</a></span></li>
-				</ul>
-
-			</div> <!-- end img-list -->
-
-		</section> <!-- end portfolio -->
-
-		<section id="resume" class="third sections">
-
+		<section id="resume" class="sections">
+			
 			<h2 class="section-heading">Resume</h2>
 
-			<div id="resume-header" class="parallax" data-speed="-5"></div>
+			<ul class="work-timeline">
+				<li>
+					<div class="timeline-content wow slideInRight" data-wow-offset="100">
+						<span class="time">Oct 2016 - Present</span>
+						<span class="place">Couponology.com Bayside, NY</span>
+						<span class="title">Front-End Developer</span>
+						<p class="job-desc">Design &amp; development of back office admin dashboard.
+							<br>
+							<strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap, Javascript, jQuery, ASP.NET, DevExpress, Visual Studio
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-content wow slideInLeft" data-wow-offset="100">
+						<span class="time">2009 - Present</span>
+						<span class="place">New York, NY</span>
+						<span class="title">Freelance Web Developer</span>
+						<p class="job-desc">Website development for clients on a remote, freelance basis.
+							<br>
+							<strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap, Javascript, jQuery, WordPress
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-content wow slideInRight" data-wow-offset="100">
+						<span class="time">Nov 2016 - Feb 2017</span>
+						<span class="place">TalkPoint New York, NY</span>
+						<span class="title">Contract Web Developer</span>
+						<p class="job-desc">Design &amp; code demo webcasting websites for TalkPoint clients using HTML/CSS.
+							<br>
+							Build out websites leveraging the Convey content management system.
+							<br>
+							Modify &amp; edit logos, graphics, and photos with image editing software.
+							<br>
+							<strong>Technologies Used:</strong> HTML, CSS, Paint.NET, Convey CMS
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-content wow slideInLeft" data-wow-offset="100">
+						<span class="time">Sept 2015 - Sept 2016</span>
+						<span class="place">NY Code &amp; Design Academy New York, NY</span>
+						<span class="title">Web Developer Teaching Asst.</span>
+						<p class="job-desc">Assist in Web Development teaching duties, student projects, attendance, grading.
+							<br>
+							Assistance with coding, development, and QA of student projects.
+							<br>
+							<strong>Technologies Used:</strong> HTML5, CSS3, Javascript, jQuery, Bootstrap
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-content wow slideInRight" data-wow-offset="100">
+						<span class="time">Mar 2016 - Apr 2016</span>
+						<span class="place">Time Inc/People Magazine New York, NY</span>
+						<span class="title">Temporary Jr. HTML Developer</span>
+						<p class="job-desc">e-Newsletter HTML development in Salesforce Marketing Cloud.
+							<br>
+							Assist in migration efforts from Cheetah Mail to Salesforce Marketing Cloud.
+							<br>
+							Deployment of time-sensitive, weekly e-newsletters to subscribers.
+							<br>
+							<strong>Technologies Used:</strong> HTML, Salesforce Marketing Cloud, Google Docs
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-content wow slideInLeft" data-wow-offset="100">
+						<span class="time">Jul 2015 - Jan 2016</span>
+						<span class="place">Vidpal.net New York, NY</span>
+						<span class="title">Intern/Contract Front-End Developer</span>
+						<p class="job-desc">Team-based development using Git and BitBucket.
+							<br>
+							PHP back-end, Javascript and jQuery development to dynamically generate front-end code.
+							<br>
+							Google Maps API integration for location-based video mapping.
+							<br>
+							<strong>Technologies Used:</strong> HTML5, CSS3, Javascript, jQuery, PHP, Linux
+						</p>
+					</div>
+				</li>
+			</ul>
 
-			<div class="blue-chevron"></div>
+			<h2 class="sub-heading">Skills</h2>
 
-			<img src="images/resume.jpg" class="resume-img" alt="Resume">
+			<div class="skills-container bg-color1">
+				
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>Bootstrap</li>
+					<li>WordPress</li>
+					<li>PHP</li>
+					<li>ASP.NET</li>
+					<li>Linux</li>
+					<li>Windows</li>
+					<li>Sublime Text</li>
+					<li>Git</li>
+					<li>Visual Studio</li>
+				</ul>
 
-			<div class="btn-desc">
+			</div>
 
-				<span>Download</span>
-				<div class="download-img"><a href="downloads/Ed-Aponte-Resume.pdf" target="_blank"><img src="images/download-icon.png" alt="Download"></a></div>
-				<span>Resume</span>
+			<div class="view-btn-container" style="margin-top: 30px;">
+				<a href="downloads/Ed-Aponte-Resume.pdf" target="_blank" class="view-btn2">Download Resume</a>
+			</div>
 
-			</div> <!-- end btn-desc -->
+		</section> <!-- resume -->
 
-
-		</section> <!-- end resume -->
-
-		<section id="about" class="first sections">
+		<section id="about" class="sections bg-color1">
 			
 			<h2 class="section-heading">About</h2>
 
-			<div class="img-list">
+			<div class="section-container">
 
-				<ul>
-					<li class="wow bounceInLeft" data-wow-offset="100"><img src="images/tech-image.jpg" alt="tech image"><span>Tech Professional</span></li>
-					<li class="align-right wow bounceInRight" data-wow-offset="100"><span>Martial Artist</span><img src="images/ma-image.jpg" alt="martial arts image"></li>
-					<li class="wow bounceInLeft" data-wow-offset="100"><img src="images/writer-image.jpg" alt="writer image"><span>Writer</span></li>
-					<li class="align-right wow bounceInRight" data-wow-offset="100"><span>Traveler</span><img src="images/travel-image.jpg" alt="travel image"></li>
-				</ul>
+				<div class="img-round head-shot-img"></div>
 
-			</div> <!-- end img-list -->
+				<div class="about-content">
+					<p>
+						I have been involved with technology, software, and hardware most of my life. I started my career in IT as a computer technician, having built and repaired hundreds of computers over many years.
+					</p>
 
-			<div id="above-blue-btn" style="height: 80px;"></div>
+					<p>
+						I then migrated into technical support, working in a variety of industries including systems and networking sales, computer and electronics manufacturing, and healthcare. Working in healthcare IT, I worked in hospitals, cancer centers, and home healthcare industries. Working in these industries allowed me to move into software support and QA.
+					</p>
 
-			<div class="btn-desc">
+					<p>
+						After years of working in software support and QA, I decided that I wanted to progress into writing code and learned HTML and CSS on my own, and later taking front-end development coursework at the New York Code and Design Academy in the financial district.
+					</p>
 
-				<span>Read</span>
-				<div class="blue-btn" data-link="#about-more"></div>
-				<span>More</span>
+					<p>
+						I now actively work in web development, building sites for a variety of clients using HTML, CSS, Javascript, jQuery, WordPress, ASP.NET and other technologies and tools.
+					</p>
 
-			</div> <!-- end btn-desc -->
+					<p>
+						Outside of the IT field, I have had a life-long interest in martial arts with a background that includes Okinawan karate, Muay Thai, Filipino stick fighting, and Russian martial art. To that end, I have also written countless articles for such publications as <em>Black Belt</em> magazine and <em>World of Martial Arts</em> magazine.
+					</p>
 
-			<section class="card" id="about-more">
+					<p>
+						I also love to travel, and have been to many places across three continents to include countries such as Taiwan, China, Japan, South Korea, Spain, Italy and others. My goal is to set foot on all seven continents.
+					</p>
+				</div>
 
-				<div class="card-content">
+				<div class="clr"></div>
 
-					<h3>TECH PROFESSIONAL</h3>
+			</div> <!-- section-container -->
 
-						<p>
-							Currently, I am transitioning into a full-time career in Web Development, studying HTML5, CSS3, and full-stack javascript. I have also done some studying of back-end languages like PHP, Java and Ruby. I am also a Teaching Assistant at the New York Code &amp; Design Academy.
-						</p>
+		</section> <!-- about -->
 
-						<p>
-							I have been involved with technology since I was a child. I went to Aviation High School and passed my FAA Airframe Mechanics license exam at the age of 17.
-						</p>
+		<footer id="contact" class="sections bg-color2">
+			
+			<h2 class="section-heading font-color1">Contact</h2>
 
-						<p>
-							I've also been involved with all things computers for a long time. Over the years I've built hundreds of computers ranging from full-tower units with 500 watt power supplies to shoebox-sized, mini-ITX fan-less HTPCs running Linux and XBMC. I rooted a Barnes and Noble Nook tablet and installed a custom Android ROM. I've turned a mini Android TV box into a Samba server. I also hacked a chromebook and installed Ubuntu Linux, making it my on-the-go development laptop.
-						</p>
+			<div class="section-container">
+				
+				<div class="get-started">
+					<h3>Want a new <span>website</span>?&nbsp; Check out my web development <span>rates</span>.</h3>
+					<button type="button" class="view-btn" id="get-started-btn">Get Started</button>
+				</div>
 
-					<h3>MARTIAL ARTIST</h3>
+			</div> <!-- section-container -->
 
-						<p>
-							The martial arts have been another life-long venture for me.  I got involved in the martial arts during my time at Penn State, and achieved a high level of proficiency in Isshinryu Karate and Okinawan weaponry. I expanded my exploration by studying various other arts such as Muay Thai, Filipino stick fighting, Russian Martial Art, and Bruce Lee's Jeet Kune Do.
-						</p>
+			<ul class="contact-list">
+				<li>
+					<img src="images/email-icon.png" alt="Email Icon" id="email-icon">
+					<div class="email bg-color2"></div>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/edaponte" target="_blank"><img src="images/linkedin-icon.png" alt="Linkedin Icon"></a>
+				</li>
+				<li>
+					<a href="https://github.com/eaponte" target="_blank"><img src="images/github-icon.png" alt="GitHub Icon"></a>
+				</li>
+				<li class="font-color2 float-right">
+					Copyright &copy; <span class="font-color1">Ed Aponte</span>. All rights reserved.
+				</li>
+			</ul>
 
-						<p>
-							Studying martial arts led to other interests including human anatomy, bio-mechanics, health, and fitness.  I also took a personal training course at Equinox Fitness and obtained a first-level Equinox certificate in personal training.
-						</p>
+			<div class="clr"></div>
 
-					<h3>WRITER</h3>
+		</footer> <!-- contact -->
 
-						<p>
-							My interest in martial arts and fitness led to a writing hobby that included writing over half a dozen martial arts articles for such publications as <em>Black Belt</em> magazine and <em>World of Martial Arts</em> magazine.
-						</p>
+	</div> <!-- container -->
 
-						<p>
-							I also learned how to design and layout books when I self-published two books on fitness and martial arts.
-						</p>
+	<!-- ********** Rates Modal ********** -->
 
-					<h3>TRAVELER</h3>
+	<div class="rates-modal-wrapper">
 
-						<p>
-							In addition to writing, my martial arts interest led to a love of travel.  My first trek outside of the United States involved a one-year stay in Taiwan. During this time, I taught English to school children, trained with kung-fu masters, Muay Thai boxers, and spent some time in Okinawa, training with well-known Isshinryu master Angi Uezu.
-						</p>
+		<div class="rates-modal  bg-color1">
 
-						<p>
-							I also traveled to Hong Kong, mainland China, South Korea, Okinawa, and Macau. The travel was great, the people kind and friendly, and the food fantastic!
-						</p>
-
-					<h3>HEALTHCARE TECHNOLOGIST</h3>
-
-						<p>
-							Lastly, I have been a licensed X-Ray Technologist. Combining my interest in technology, anatomy, and health led to a degree in Radiologic Technology that led to a long career in the field of healthcare IT.
-						</p>
-
-					<div class="card-footer">
-					
-						<div class="back-btn"><a href="#above-blue-btn"></a></div>
-
-					</div>
-
-				</div> <!-- end card-content -->
-
-			</section> <!-- end about-more -->
-
-		</section> <!-- end about -->
-
-		<section id="contact" class="second sections">
-
-			<h2 class="section-heading">Get in Touch</h2>
-
-			<div id="envelope">
-
-				<img src="images/email.png" class="mail-img">
-				<span id="email"></span>
-
-			</div> <!-- end envelope -->
-
-			<div class="linkedin-img">
-
-				<a href="https://www.linkedin.com/in/edaponte" target="_blank"><img src="images/linkedin.jpg"></a>
-
+			<div class="rates-modal-header">
+				<div class="close-modal-btn">&times;</div>
 			</div>
 
-			<div class="github-img">
+			<div class="rates-modal-body">
+			
+				<h3>Web Design for Small Business &amp; Personal Use</h3>
 
-				<a href="https://github.com/eaponte" target="_blank"><img src="images/github.jpg"></a>
+				<h3>Rates &amp; Pricing</h3>
 
-			</div>
+					<p>
+						<strong>Please Note:</strong> All rates are subject to change without notice.
+					</p>
 
-		</section> <!-- end contact -->
+					<div class="pricing-col-1">
+						
+						<header>
+							<h2>$500.00</h2>
+							<h2>Standard Site</h2>
+						</header>
 
-	</div> <!-- end container -->
+						<p>This includes:</p>
+
+						<ul>
+							<li>a 1 to 4 page website or</li>
+							<li>1-page layout with up to 4 sections</li>
+							<li><strong>$250.00</strong> due up front</li>
+						</ul>
+
+					</div> <!-- pricing-col-1 -->
+
+					<div class="pricing-col-2">
+						
+						<header>
+							<h2>$700.00</h2>
+							<h2>WordPress Site</h2>
+						</header>
+
+						<p>This includes:</p>
+
+						<ul>
+							<li>a 1 to 4 page website or</li>
+							<li>1-page layout with up to 4 sections</li>
+							<li><strong>$400.00</strong> due up front</li>
+						</ul>
+
+						<p style="font-size: 16px;">
+							Unlike a standard website, WordPress sites allow you, the customer, to make edits to your own content. You can add or remove paragraphs, insert or delete images, create news events, or make blog entries. The increased cost of developing a WordPress site allows you to have more control over your own content without incurring the additional costs of having a developer make content related changes to your site in the future.
+						</p>
+
+					</div> <!-- pricing-col-2 -->
+
+					<div class="clr"></div>
+
+					<p>
+						Each additional page (of a multi-page site) or section (of a one-page layout) is <strong>$90.00</strong>
+					</p>
+
+					<p>
+						Major edit changes are charged at <strong>$35.00</strong> per hour.<br>
+						Minor edits to color, content and images <strong>of a standard website</strong> are <strong>ALWAYS FREE!</strong>
+					</p>
+
+					<p>
+						<strong>Responsive Design</strong> - Websites that adjust to look good on tablets, smartphones and iPhones is included <strong>FREE</strong> with your purchase!
+					</p>
+
+					<p>
+						<strong>Please Note:</strong> Any additional costs for website hosting and domain name purchase are your responsibility and is charged to you by the web hosting company you choose.  These are reasonable costs that can start for as little as $40 per YEAR on average (or about $3.50 per month).
+					</p>
+
+				<h3><span>Contact me at </span><span class="email" style="text-transform: none; color: #7AE2DE;"></span></h3>
+
+			</div> <!-- rates-modal-body -->
+
+		</div> <!-- rates-modal -->
+
+	</div> <!-- modal-wrapper -->
 
 	<script src="js/jquery-min.js"></script>
 

@@ -1,26 +1,25 @@
-// Smooth Scrolling
+/***** Smooth Scrolling *****/
 
-$('a[href^="#"]').on('click',function(e) {
-	e.preventDefault();
+	$('a[href^="#"]').on('click',function(e) {
+		e.preventDefault();
 
-	var target = this.hash;
-	var $target = $(target);
-	var targetOffset = $target.offset().top - 100;
+		var target = this.hash;
+		var $target = $(target);
+		var targetOffset = $target.offset().top - 100;
 
-	$('html, body').stop().animate({
-		'scrollTop': targetOffset
-	}, 900, 'swing', function () {
-		window.location.hash = targetOffset;
+		$('html, body').stop().animate({
+			'scrollTop': targetOffset
+		}, 900, 'swing', function () {
+			window.location.hash = targetOffset;
+		});
 	});
-});
 
-// Parallax Effect
+/***** Parallax Effect *****/
 
 	// Cache the Window object
 	var $window = $(window);
 	
 	// Parallax Backgrounds
-	// Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
 	
 	// applies parallax to any class="parallax" ex. --> <section class="parallax" data-speed="5">
 	$('.parallax').each(function() {
@@ -41,53 +40,45 @@ $('a[href^="#"]').on('click',function(e) {
 		}); // end window scroll
 	});
 
-// Check Window Width and Close Side Nav If Not in Mobile View
+/***** Side Nav Bar *****/
 
-function checkWindowWidth() {
-	var windowWidth = $(window).width();
+	// Open Side Nav
 
-	if (windowWidth > 835) {
-		$("#side-nav").css("right", "-200px");
-	}
-}
+	$(".nav-menu-btn").click(function() {
+		$("#nav-bar").animate({right: "0"});
+	});
 
-checkWindowWidth();
+	// Close Side Nav
 
-$(window).resize(checkWindowWidth);
+	$(".close-nav-btn").click(function() {
+		$("#nav-bar").animate({right: "-200px"});
+	});
 
-// Open Side Nav
+	$ ("#nav-list li a").click(function() {
+		if($(window).width() < 911) {
+			$("#nav-bar").animate({right: "-200px"});
+		}
+	});
 
-$(".side-menu-btn").click(function() {
-	$("#side-nav").animate({right: "0"});
-});
-
-// Close Side Nav
-
-$(".sideNav").click(function() {
-	$("#side-nav").animate({right: "-200px"});
-});
-
-// Fade In for Heading
+/***** Fade In for Heading *****/
 
 $(".header-container").animate({opacity: 1, top: "30%"}, 1000);
 
-// Open Card
-
-$("[data-link]").click(function(e) {
-	e.preventDefault();
-	thisCard = $(this).data("link");
-	$(thisCard).slideDown("slow");
-});
-
-// Hide All Cards on Back Button
-
-$(".back-btn").click(function() {
-	$("#rates, #about-more").slideUp("slow");
-});
-
-// Email Address
+/***** Email *****/
 
 var email1 = "eaponte";
 var email2 = "&#64;zoho&#46;com";
 
-document.getElementById("email").innerHTML = email1 + email2;
+$(".email").html(email1 + email2);
+
+/***** Rates Modal *****/
+
+$("#get-started-btn").click(function(){
+	$(".rates-modal-wrapper").fadeIn(300);
+	$("body").addClass("overflow-hidden");
+});
+
+$(".close-modal-btn").click(function(){
+	$(".rates-modal-wrapper").fadeOut(300);
+	$("body").removeClass("overflow-hidden");
+});
