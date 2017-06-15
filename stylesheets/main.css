@@ -6,7 +6,6 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-weight: 100;
 	font-size: 14px;
 	padding: 0;
 	margin: 0;
@@ -22,7 +21,7 @@ html, body {
 }
 
 strong {
-	font-weight: 400;
+	font-weight: bold;
 }
 
 .font-color1 {
@@ -176,7 +175,7 @@ strong {
 	background-color: #414A52;
 	font-size: 50px;
 	text-align: center;
-	line-height: 37px;
+	line-height: 48px;
 	cursor: pointer;
 	margin-top: 7px;
 	transition: all 0.3s ease-out;
@@ -375,7 +374,8 @@ strong {
 	text-indent: -7px;
 	padding-left: 7px;
 	padding-bottom: 5px;
-	font-weight: 400;
+	font-weight: bold;
+	letter-spacing: .06em;
 }
 
 .testimonial-posts li span {
@@ -518,7 +518,7 @@ strong {
 }
 
 .timeline-content .place, .timeline-content .title {
-	font-weight: 400;
+	font-weight: bold;
 	padding-bottom: 5px;
 }
 
@@ -585,6 +585,7 @@ strong {
 
 .get-started h3 {
 	font-size: 36px;
+	font-weight: 100;
 	letter-spacing: 1px;
 	margin-bottom: 30px;
 }
@@ -741,6 +742,10 @@ strong {
 
 .rates-modal-body strong, .rates-modal-body span, .rates-modal-body li {
 	font-size: 18px;
+}
+
+.rates-modal-body li {
+	line-height: 36px;
 }
 
 .pricing-col-1, .pricing-col-2 {
