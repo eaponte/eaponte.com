@@ -772,6 +772,23 @@ strong {
 	text-align: center;
 }
 
+/********** Portfolio Pages **********/
+
+.portfolio-images {
+	padding: 5px;
+}
+
+.portfolio-images img {
+	display: block;
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.portfolio-images .portfolio-mobile-images img {
+	max-width: 500px;
+}
+
 /**********************************/
 /********** Media Queries *********/
 /**********************************/
@@ -920,6 +937,10 @@ strong {
 		float: none;
 		display: block;
 		margin: 0 auto 40px;
+	}
+
+	.portfolio-images .portfolio-mobile-images img {
+		width: 85%;
 	}
 
 }
