@@ -10,7 +10,7 @@
 		$('html, body').stop().animate({
 			'scrollTop': targetOffset
 		}, 900, 'swing', function () {
-			window.location.hash = targetOffset;
+			//window.location.hash = targetOffset;
 		});
 	});
 
