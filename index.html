@@ -1,338 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ed Aponte | eAponte.com</title>
 	<meta name="description" content="Ed Aponte | eAponte.com">
-	<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
 
-	<title>ed aponte | eAponte.com</title>
+	<link rel="canonical" href="https://eaponte.com/" />
+	
+	<meta property="og:title" content="Ed Aponte | eAponte.com" />
+	<meta property="og:description" content="Ed Aponte | eAponte.com" />
+	<meta property="og:image" content="https://eaponte.com/images/ed-head-shot.webp" />
+	<meta property="og:url" content="https://eaponte.com/" />
+	<meta property="og:site_name" content="eaponte.com" />
+	<meta property="og:type" content="website" />
 
-	<link href="stylesheets/animate.css" rel="stylesheet" type="text/css">
+	<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Ed Aponte",
+            "description": "Ed Aponte | eAponte.com",
+            "url": "https://eaponte.com/",
+            "logo": "https://eaponte.com/images/ed-head-shot.webp",
+			"sameAs": ["https://www.linkedin.com/in/edaponte", "https://github.com/eaponte"]
+        }
+    </script>
 
-	<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="styles/main.css">
 
 </head>
 <body>
+
+	<header class="header">
+
+		<a href="#" class="header__logo"><span>ea</span></a>
+
+		<nav class="header__nav">
+
+			<ul class="header__nav-list">
+				<li class="header__nav-item">
+					<a href="#featured" class="header__nav-link">Featured</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#portfolio" class="header__nav-link">Portfolio</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#resume" class="header__nav-link">Resume</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#about" class="header__nav-link">About</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#contact" class="header__nav-link">Contact</a>
+				</li>
+			</ul>
+
+		</nav>
+
+		<button class="header__nav-toggle" aria-label="toggle navigation">
+			<span></span>
+		</button>
+
+	</header>
+
+	<div class="hero">
+
+		<h1>Ed Aponte</h1>
+		<p>front-end developer</p>
+
+	</div>
+
+	<section class="featured" id="featured">
+
+		<div class="inner">
+
+			<div class="inner__featured-left">
+
+				<h2 class="inner__subtitle">Featured Project</h2>
 	
-	<nav id="top-nav" class="bg-color2">
-		
-		<a href="#top"><h1>ea</h1></a>
+				<p class="inner__name">Couponology.com</p>
+	
+				<p class="inner__desc">
+					Couponology.com is a couponing website that brings you all the best bargains on everything sold online.
+				</p>
 
-		<div id="nav-bar">
+				<p class="inner__highlights">React JS &#47; JavaScript &#47; .NET Core</p>
 
-			<div class="close-nav-btn">&times;</div>
+				<a href="https://www.couponology.com/" target="_blank" class="inner__site-link">View site</a>
+	
+			</div>
+	
+			<img src="images/featured-image.webp" alt="Featured Project" class="inner__featured-right">
 
-			<ul id="nav-list">
-				<li><a href="#testimonials">testimonials</a></li>
-				<li><a href="#clients">clients</a></li>
-				<li><a href="#portfolio">portfolio</a></li>
-				<li><a href="#resume">resume</a></li>
-				<li><a href="#about">about</a></li>
-				<li><a href="#contact">contact</a></li>
-			</ul>
+		</div>
 
-		</div> <!-- nav-bar -->
+	</section>
 
-		<div class="nav-menu-btn float-right"><span></span></div>
+	<section class="portfolio" id="portfolio">
 
-		<div class="clr"></div>
+		<h2 class="title section--title">Portfolio</h2>
 
-	</nav> <!-- end top-nav -->
+		<div class="inner">
 
-	<div class="container">
-		
-		<header id ="top" class="main-header bg-color1 parallax" data-speed="-5">
+			<div class="portfolio__item">
 
-			<section class="header-container">
-			
-				<ul>
-					<li>Ed Aponte</li>
-					<li>Web Developer</li>
-				</ul>
+				<img src="images/couponology.webp" alt="Couponology.com" class="">
 
-			</section>
+				<h3 class="inner__subtitle">Couponology</h3>
 
-		</header>
+				<p class="inner__desc">
+					Couponology.com is a couponing website that brings you all the best bargains on everything sold online.
+				</p>
 
-		<section id="testimonials" class="sections bg-color1">
-			
-			<h2 class="section-heading">Testimonials</h2>
+				<p class="inner__highlights">React JS &#47; JavaScript &#47; .NET Core</p>
 
-			<ul class="testimonial-posts">
-				<li>
-					<img src="images/al-gore-i.jpg" alt="Al Gore">
-					<p>
-						<q>Without Ed Aponte's help, I could never have invented the internet.</q>
-						<span>Al Gore - Inventor of the internet</span>
-					</p>
-				</li>
-				<li>
-					<img src="images/bill-gates-i.jpg" alt="Bill Gates">
-					<p>
-						<q>Ed said CTRL-ALT-DEL was a bad idea. I should have listened to Ed Aponte.</q>
-						<span>Bill Gates - Creator of CTRL-ALT-DEL</span>
-					</p>
-				</li>
-				<li>
-					<img src="images/steve-jobs-i.jpg" alt="Steve Jobs">
-					<p>
-						<q>Good artists copy, great artists steal. I stole all my ideas from Ed Aponte.</q>
-						<span>Steve Jobs - A great artist</span>
-					</p>
-				</li>
-				<li>
-					<img src="images/most-interesting-man-in-the-world-i.jpg" alt="Dos Equis Spokesperson">
-					<p>
-						<q>Ed Aponte is actually 'The Most Interesting Man in the World'.</q>
-						<span>The Second Most Interesting Man in the World - Dos Equis Spokesperson</span>
-					</p>
-				</li>
-			</ul>
+				<div class="inner__links">
+					<!-- <a href="" target="_blank" class="inner__source-link"><span>Source code</span> &#10095;</a> -->
 
-		</section> <!-- testimonials -->
-
-		<section id="clients" class="sections bg-color2 font-color1">
-			
-			<h2 class="section-heading">Clients</h2>
-
-			<ul class="client-posts">
-				<li><img src="images/logo-timeinc.png" alt="Time Inc"></li>
-				<li><img src="images/logo-mcdonalds.png" alt="McDonald's"></li>
-				<li><img src="images/logo-couponology.png" alt="Couponology"></li>
-				<li><img src="images/logo-novartis.png" alt="Novartis"></li>
-				<li><img src="images/logo-talkpoint.png" alt="TalkPoint"></li>
-			</ul>
-
-		</section> <!-- clients -->
-
-		<section id="portfolio" class="sections bg-color1 bg-img1 font-color1 parallax" data-speed="-5">
-			
-			<h2 class="section-heading">Portfolio</h2>
-
-			<ul class="portfolio-posts">
-				<li>
-					<h3>Couponology Back Portal</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/couponology-portal-desktop.png" alt="Couponology Portal Desktop">
-						<img class="mobile-img" src="images/couponology-portal-mobile.png" alt="Couponology Portal Mobile">
-					</div>
-					<div class="view-btn-container"><a href="portfolio/couponology-portal/index.html" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; jquery &bull; bootstrap &bull; ASP.NET &bull; C# &bull; DevExpress/DevExtreme</p>
-				</li>
-				<li>
-					<h3>Don D'Auria</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/don-dauria-desktop.png" alt="DonDauriaEditorial.com Desktop">
-						<img class="mobile-img" src="images/don-dauria-mobile.png" alt="DonDauriaEditorial.com Mobile">
-					</div>
-					<div class="view-btn-container"><a href="http://www.dondauriaeditorial.com" target="_blank" class="view-btn">View</a></div>
-					<p>wordpress &bull; html5 &bull; css3 &bull; js &bull; responsive &bull; jquery &bull; php</p>
-				</li>
-				<li>
-					<h3>Rosanna Chiofalo</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/rosanna-chiofalo-desktop.png" alt="RosannaChiofalo.com Desktop">
-						<img class="mobile-img" src="images/rosanna-chiofalo-mobile.png" alt="RosannaChiofalo.com Mobile">
-					</div>
-					<div class="view-btn-container"><a href="http://www.rosannachiofalo.com" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; responsive &bull; bootstrap &bull; jquery &bull; php</p>
-				</li>
-				<li>
-					<h3>Gregg Prosser</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/gregg-prosser-desktop.png" alt="GreggProsser.com Desktop">
-						<img class="mobile-img" src="images/gregg-prosser-mobile.png" alt="GreggProsser.com Mobile">
-					</div>
-					<div class="view-btn-container"><a href="http://www.greggprosser.com" target="_blank" class="view-btn">View</a></div>
-					<p>wordpress &bull; html5 &bull; css3 &bull; js &bull; responsive &bull; jquery &bull; php</p>
-				</li>
-				<li>
-					<h3>RCA Creative Works</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/rca-desktop.png" alt="RCACreativeWorks.com Desktop">
-						<img class="mobile-img" src="images/rca-mobile.png" alt="RCACreativeWorks.com Mobile">
-					</div>
-					<div class="view-btn-container"><a href="http://www.rcacreativeworks.com" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; responsive &bull; media queries &bull; jquery</p>
-				</li>
-				<li>
-					<h3>Paul Dinas</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/paul-dinas-desktop.png" alt="PaulDinasBookEditor.com Desktop">
-						<img class="mobile-img" src="images/paul-dinas-mobile.png" alt="PaulDinasBookEditor.com Mobile">
-					</div>
-					<div class="view-btn-container"><a href="http://www.pauldinasbookeditor.com" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; responsive &bull; media queries</p>
-				</li>
-				<li>
-					<h3>Cloud-Based OS</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/cloud-os-desktop.png" alt="Cloud OS Desktop">
-					</div>
-					<div class="view-btn-container"><a href="https://eaponte.github.io/leo-os/" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; jquery &bull; jquery-ui &bull; windows</p>
-				</li>
-				<li>
-					<h3>Calculator</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/calculator-desktop.png" alt="Calculator App">
-					</div>
-					<div class="view-btn-container"><a href="https://eaponte.github.io/calculator/" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; material design inspired</p>
-				</li>
-				<li>
-					<h3>Sketchpad</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/sketchpad-desktop.png" alt="Sketchpad App">
-					</div>
-					<div class="view-btn-container"><a href="https://eaponte.github.io/sketchpad/" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; jquery &bull; html5 canvas tag</p>
-				</li>
-				<li>
-					<h3>Email Client Demo</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/email-client-desktop.png" alt="Email Client App">
-					</div>
-					<div class="view-btn-container"><a href="https://eaponte.github.io/email-client-demo/" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; jquery</p>
-				</li>
-				<li>
-					<h3>Maps</h3>
-					<div class="img-container">
-						<img class="desktop-img" src="images/maps-desktop.png" alt="Maps App">
-					</div>
-					<div class="view-btn-container"><a href="https://eaponte.github.io/maps/" target="_blank" class="view-btn">View</a></div>
-					<p>html5 &bull; css3 &bull; js &bull; open street map &bull; open layers &bull; geolocation &bull; nominatim search</p>
-				</li>
-			</ul>
-
-		</section> <!-- portfolio -->
-
-		<section id="resume" class="sections">
-			
-			<h2 class="section-heading">Resume</h2>
-
-			<ul class="work-timeline">
-				<li>
-					<div class="timeline-content wow slideInRight" data-wow-offset="100">
-						<span class="time">Oct 2016 - Present</span>
-						<span class="place">Couponology.com Bayside, NY</span>
-						<span class="title">Front-End Developer</span>
-						<p class="job-desc">Design &amp; development of back office admin dashboard.
-							<br>
-							<strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap, Javascript, jQuery, ASP.NET, DevExpress, Visual Studio
-						</p>
-					</div>
-				</li>
-				<li>
-					<div class="timeline-content wow slideInLeft" data-wow-offset="100">
-						<span class="time">2009 - Present</span>
-						<span class="place">New York, NY</span>
-						<span class="title">Freelance Web Developer</span>
-						<p class="job-desc">Website development for clients on a remote, freelance basis.
-							<br>
-							<strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap, Javascript, jQuery, WordPress
-						</p>
-					</div>
-				</li>
-				<li>
-					<div class="timeline-content wow slideInRight" data-wow-offset="100">
-						<span class="time">Nov 2016 - Feb 2017</span>
-						<span class="place">TalkPoint New York, NY</span>
-						<span class="title">Contract Web Developer</span>
-						<p class="job-desc">Design &amp; code demo webcasting websites for TalkPoint clients using HTML/CSS.
-							<br>
-							Build out websites leveraging the Convey content management system.
-							<br>
-							Modify &amp; edit logos, graphics, and photos with image editing software.
-							<br>
-							<strong>Technologies Used:</strong> HTML, CSS, Paint.NET, Convey CMS
-						</p>
-					</div>
-				</li>
-				<li>
-					<div class="timeline-content wow slideInLeft" data-wow-offset="100">
-						<span class="time">Sept 2015 - Sept 2016</span>
-						<span class="place">NY Code &amp; Design Academy New York, NY</span>
-						<span class="title">Web Developer Teaching Asst.</span>
-						<p class="job-desc">Assist in Web Development teaching duties, student projects, attendance, grading.
-							<br>
-							Assistance with coding, development, and QA of student projects.
-							<br>
-							<strong>Technologies Used:</strong> HTML5, CSS3, Javascript, jQuery, Bootstrap
-						</p>
-					</div>
-				</li>
-				<li>
-					<div class="timeline-content wow slideInRight" data-wow-offset="100">
-						<span class="time">Mar 2016 - Apr 2016</span>
-						<span class="place">Time Inc/People Magazine New York, NY</span>
-						<span class="title">Temporary Jr. HTML Developer</span>
-						<p class="job-desc">e-Newsletter HTML development in Salesforce Marketing Cloud.
-							<br>
-							Assist in migration efforts from Cheetah Mail to Salesforce Marketing Cloud.
-							<br>
-							Deployment of time-sensitive, weekly e-newsletters to subscribers.
-							<br>
-							<strong>Technologies Used:</strong> HTML, Salesforce Marketing Cloud, Google Docs
-						</p>
-					</div>
-				</li>
-				<li>
-					<div class="timeline-content wow slideInLeft" data-wow-offset="100">
-						<span class="time">Jul 2015 - Jan 2016</span>
-						<span class="place">Vidpal.net New York, NY</span>
-						<span class="title">Intern/Contract Front-End Developer</span>
-						<p class="job-desc">Team-based development using Git and BitBucket.
-							<br>
-							PHP back-end, Javascript and jQuery development to dynamically generate front-end code.
-							<br>
-							Google Maps API integration for location-based video mapping.
-							<br>
-							<strong>Technologies Used:</strong> HTML5, CSS3, Javascript, jQuery, PHP, Linux
-						</p>
-					</div>
-				</li>
-			</ul>
-
-			<h2 class="sub-heading">Skills</h2>
-
-			<div class="skills-container bg-color1">
-				
-				<ul>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>JavaScript</li>
-					<li>jQuery</li>
-					<li>Bootstrap</li>
-					<li>WordPress</li>
-					<li>PHP</li>
-					<li>ASP.NET</li>
-					<li>Linux</li>
-					<li>Windows</li>
-					<li>Sublime Text</li>
-					<li>Git</li>
-					<li>Visual Studio</li>
-				</ul>
+					<a href="https://www.couponology.com/" target="_blank" class="inner__site-link">View site</a>
+				</div>
 
 			</div>
 
-			<div class="view-btn-container" style="margin-top: 30px;">
-				<a href="downloads/Ed-Aponte-Resume.pdf" target="_blank" class="view-btn2">Download Resume</a>
+			<div class="portfolio__item">
+
+				<img src="images/couponology-portal.webp" alt="Couponology portal" class="">
+
+				<h3 class="inner__subtitle">Couponology Portal</h3>
+
+				<p class="inner__desc">
+					Back office portal for all tasks related to content on the Couponology website.
+				</p>
+
+				<p class="inner__highlights">Bootstrap &#47; jQuery &#47; ASP.NET</p>
+
+				<div class="inner__links">
+					<!-- <a href="" target="_blank" class="inner__source-link"><span>Source code</span> &#10095;</a> -->
+
+					<a href="/portfolio/couponology-portal/" target="_blank" class="inner__site-link">View site</a>
+				</div>
+
 			</div>
 
-		</section> <!-- resume -->
+			<div class="portfolio__item">
 
-		<section id="about" class="sections bg-color1">
+				<img src="images/couponology-media-kit.webp" alt="Couponology media kit" class="">
+
+				<h3 class="inner__subtitle">Couponology Media Kit</h3>
+
+				<p class="inner__desc">
+					Couponology media kit showcasing advertising options on the Couponology website.
+				</p>
+
+				<p class="inner__highlights">React JS &#47; JavaScript &#47; .NET Core</p>
+
+				<div class="inner__links">
+					<!-- <a href="" target="_blank" class="inner__source-link"><span>Source code</span> &#10095;</a> -->
+
+					<a href="https://media.couponology.com/" target="_blank" class="inner__site-link">View site</a>
+				</div>
+
+			</div>
+
+			<div class="portfolio__item">
+
+				<img src="images/babcock-pages.webp" alt="BabcockPages.com" class="">
+
+				<h3 class="inner__subtitle">Babcock Pages</h3>
+
+				<p class="inner__desc">
+					Business directory of neighbor recommended services and restaurants for Babcock Ranch residents.
+				</p>
+
+				<p class="inner__highlights">CSS3 &#47; JavaScript &#47; jQuery</p>
+
+				<div class="inner__links">
+					<a href="https://github.com/eaponte/babcockpages" target="_blank" class="inner__source-link"><span>Source code</span> &#10095;</a>
+
+					<a href="https://babcockpages.com/" target="_blank" class="inner__site-link">View site</a>
+				</div>
+
+			</div>
+
+			<div class="portfolio__item">
+
+				<img src="images/rosanna-chiofalo.webp" alt="RosannaChiofalo.com" class="">
+
+				<h3 class="inner__subtitle">Rosanna Chiofalo</h3>
+
+				<p class="inner__desc">
+					Author website for a published writer featuring works of women's contemporary fiction.
+				</p>
+
+				<p class="inner__highlights">Bootstrap &#47; JavaScript &#47; jQuery</p>
+
+				<div class="inner__links">
+					<a href="https://github.com/eaponte/rosannachiofalo.com" target="_blank" class="inner__source-link"><span>Source code</span> &#10095;</a>
+
+					<a href="https://rosannachiofalo.com/" target="_blank" class="inner__site-link">View site</a>
+				</div>
+
+			</div>
+
+			<div class="portfolio__item">
+
+				<img src="images/rca-editing.webp" alt="RCAEditing.com" class="">
+
+				<h3 class="inner__subtitle">RCA Editing</h3>
+
+				<p class="inner__desc">
+					Editorial services website providing developmental, copyediting, &amp; book jacket copy.
+				</p>
+
+				<p class="inner__highlights">Bootstrap &#47; JavaScript &#47; jQuery</p>
+
+				<div class="inner__links">
+					<a href="https://github.com/eaponte/rcaediting.com" target="_blank" class="inner__source-link"><span>Source code</span> &#10095;</a>
+
+					<a href="https://rcaediting.com/" target="_blank" class="inner__site-link">View site</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="resume" id="resume">
+
+		<h2 class="title section--title">Resume</h2>
+
+		<div class="inner">
+
+			<ul class="resume__timeline">
+				<li class="resume__item">
+					<div class="timeline-content">
+						<div class="time">Oct 2016 - Present</div>
+						<div class="place">Couponology - New York, NY</div>
+						<div class="title">Front-End Developer</div>
+						<div class="job-desc">
+							<p>
+								Front-End development of both Couponology.com &amp; the back office portal.
+							</p>
+							<p>
+								<strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap, Javascript, React JS, .NET Core, ASP.NET
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="resume__item">
+					<div class="timeline-content">
+						<div class="time">2009 - Present</div>
+						<div class="place">Remote</div>
+						<div class="title">Freelance Front-End Developer</div>
+						<div class="job-desc">
+							<p>
+								Website development for clients on a remote, freelance basis.
+							</p>
+							<p>
+								<strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap, Javascript, jQuery
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="resume__item">
+					<div class="timeline-content">
+						<div class="time">Nov 2016 - Feb 2017</div>
+						<div class="place">TalkPoint - New York, NY</div>
+						<div class="title">Contract Web Developer</div>
+						<div class="job-desc">
+							<p>
+								Design &amp; code demo webcasting websites using HTML/CSS. Build out websites leveraging the Convey content management system. Modify &amp; edit logos, graphics, and photos with image editing software.
+							</p>
+							<p>
+								<strong>Technologies Used:</strong> HTML, CSS, Paint.NET, Convey CMS
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="resume__item">
+					<div class="timeline-content">
+						<div class="time">Sept 2015 - Sept 2016</div>
+						<div class="place">NY Code &amp; Design Academy - New York, NY</div>
+						<div class="title">Web Developer Teaching Asst.</div>
+						<div class="job-desc">
+							<p>
+								Assist in Web Development teaching duties, student projects, attendance, grading, coding, and QA of student projects.
+							</p>
+							<p>
+								<strong>Technologies Used:</strong> HTML5, CSS3, Javascript, jQuery, Bootstrap
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="resume__item">
+					<div class="timeline-content">
+						<div class="time">Mar 2016 - Apr 2016</div>
+						<div class="place">Time Inc. - New York, NY</div>
+						<div class="title">Temporary Jr. HTML Developer</div>
+						<div class="job-desc">
+							<p>
+								email HTML newsletter development in Salesforce Marketing Cloud. Assist in migration efforts from Cheetah Mail to Salesforce Marketing Cloud. Deployment of time-sensitive, weekly e-newsletters to subscribers.
+							</p>
+							<p>
+								<strong>Technologies Used:</strong> HTML, Salesforce Marketing Cloud, Google Docs
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="resume__item">
+					<div class="timeline-content">
+						<div class="time">Jul 2015 - Jan 2016</div>
+						<div class="place">Vidpal.net - New York, NY</div>
+						<div class="title">Intern/Contract Front-End Developer</div>
+						<div class="job-desc">
+							<p>
+								Team-based development using Git and BitBucket. PHP back-end, Javascript and jQuery development to dynamically generate front-end code. Google Maps API integration for location-based video mapping.
+							</p>
+							<p>
+								<strong>Technologies Used:</strong> HTML5, CSS3, Javascript, jQuery, PHP, Linux
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="resume__download">
+				<a href="downloads/Ed-Aponte-Resume.pdf" target="_blank" class="inner__site-link">Download Resume</a>
+			</div>
 			
-			<h2 class="section-heading">About</h2>
+		</div>
 
-			<div class="section-container">
+	</section>
 
-				<div class="img-round head-shot-img"></div>
+	<section class="about" id="about">
 
-				<div class="about-content">
+		<h2 class="title section--title">About</h2>
+
+		<div class="inner">
+
+				<img class="about__headshot" src="images/ed-head-shot.webp" alt="Headshot of Ed">
+
+				<div class="about__content">
 					<p>
 						I have been involved with technology, software, and hardware most of my life. I started my career in IT as a computer technician, having built and repaired hundreds of computers over many years.
 					</p>
@@ -342,158 +353,87 @@
 					</p>
 
 					<p>
-						After years of working in software support and QA, I decided that I wanted to progress into writing code and learned HTML and CSS on my own, and later taking front-end development coursework at the New York Code and Design Academy in the financial district.
+						After years of working in software support and QA, I became self-taught in HTML and CSS, and later taking front-end development coursework at the New York Code and Design Academy in the financial district of New York City.
 					</p>
 
 					<p>
-						I now actively work in web development, building sites for a variety of clients using HTML, CSS, Javascript, jQuery, WordPress, ASP.NET and other technologies and tools.
-					</p>
-
-					<p>
-						Outside of the IT field, I have had a life-long interest in martial arts with a background that includes Okinawan karate, Muay Thai, Filipino stick fighting, and Russian martial art. To that end, I have also written countless articles for such publications as <em>Black Belt</em> magazine and <em>World of Martial Arts</em> magazine.
-					</p>
-
-					<p>
-						I also love to travel, and have been to many places across three continents to include countries such as Taiwan, China, Japan, South Korea, Spain, Italy and others. My goal is to set foot on all seven continents.
+						I now actively work in web development, building sites for a variety of clients using HTML, CSS, Sass, Javascript, jQuery, and React JS, with a little .NET Core and ASP.NET thrown in.
 					</p>
 				</div>
 
-				<div class="clr"></div>
+		</div>
 
-			</div> <!-- section-container -->
+	</section>
 
-		</section> <!-- about -->
+	<section class="contact" id="contact">
 
-		<footer id="contact" class="sections bg-color2">
-			
-			<h2 class="section-heading font-color1">Contact</h2>
+		<h2 class="title section--title">Contact</h2>
 
-			<div class="section-container">
-				
-				<div class="get-started">
-					<h3>Want a new <span>website</span>?&nbsp; Check out my web development <span>rates</span>.</h3>
-					<button type="button" class="view-btn" id="get-started-btn">Get Started</button>
-				</div>
+		<div class="inner">
 
-			</div> <!-- section-container -->
-
-			<ul class="contact-list">
-				<li>
-					<img src="images/email-icon.png" alt="Email Icon" id="email-icon">
-					<div class="email bg-color2"></div>
+			<ul class="social">
+				<li class="social__items">
+					<a href="" id="eml-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 26 26">
+							<path fill="#E7E7E7" d="M15.203,17.138H15.11c-0.718,2.019-2.022,3.028-3.911,3.028c-1.417,0-2.56-0.529-3.427-1.586 c-0.868-1.057-1.302-2.521-1.302-4.391c0-2.42,0.601-4.389,1.802-5.906s2.649-2.275,4.343-2.275c1.531,0,2.49,0.618,2.88,1.855 h0.062l0.153-1.569h3.466c-0.462,4.502-0.694,7.446-0.694,8.83c0,1.48,0.39,2.219,1.171,2.219c0.822,0,1.5-0.56,2.033-1.68 c0.534-1.12,0.802-2.584,0.802-4.391c0-2.473-0.766-4.5-2.295-6.08c-1.531-1.58-3.666-2.37-6.408-2.37 c-2.937,0-5.379,1.054-7.324,3.163c-1.946,2.108-2.919,4.68-2.919,7.713c0,2.938,0.86,5.253,2.58,6.944 c1.72,1.691,4.094,2.537,7.124,2.537c2.311,0,4.426-0.454,6.346-1.363v3.028C17.836,25.614,15.577,26,12.815,26 c-3.79,0-6.873-1.118-9.25-3.353C1.188,20.412,0,17.408,0,13.634c0-3.847,1.268-7.081,3.805-9.702C6.34,1.311,9.606,0,13.6,0 c3.697,0,6.688,1.017,8.973,3.052S26,7.768,26,11.098c0,2.738-0.698,4.933-2.095,6.588c-1.396,1.654-3.127,2.481-5.19,2.481 c-1.016,0-1.844-0.28-2.48-0.84C15.597,18.766,15.253,18.036,15.203,17.138z M13.154,8.767c-0.924,0-1.676,0.542-2.256,1.625 c-0.581,1.084-0.871,2.338-0.871,3.765c0,1.015,0.198,1.805,0.593,2.371c0.395,0.566,0.905,0.848,1.532,0.848 c0.966,0,1.725-0.533,2.28-1.601c0.554-1.067,0.831-2.494,0.831-4.28c0-0.846-0.193-1.512-0.578-1.998S13.791,8.767,13.154,8.767z"/>
+						</svg>
+						<span id="eml"></span>
+					</a>
 				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/edaponte" target="_blank"><img src="images/linkedin-icon.png" alt="Linkedin Icon"></a>
+				<li class="social__items">
+					<a href="https://www.linkedin.com/in/edaponte" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 50 50">
+							<path fill="#E7E7E7" d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M16,34.9 V42H8V19h8V34.9z M12,16.5c-2.4,0-4-1.7-4-3.8C8,10.6,9.6,9,12,9s3.9,1.6,4,3.7C16,14.8,14.5,16.5,12,16.5z M42,42h-8 c0,0,0-12.1,0-13s-0.1-4-3.5-4c-3,0-3.5,2.9-3.5,4s0,13,0,13h-8V19h8v3.1c0,0,1.6-3.1,6.3-3.1c4.8,0,8.7,3.3,8.7,10V42z"/>
+						</svg>
+						<span>https://www.linkedin.com/in/edaponte</span>
+					</a>
 				</li>
-				<li>
-					<a href="https://github.com/eaponte" target="_blank"><img src="images/github-icon.png" alt="GitHub Icon"></a>
-				</li>
-				<li class="font-color2 float-right">
-					Copyright &copy; <span class="font-color1">Ed Aponte</span>. All rights reserved.
+				<li class="social__items">
+					<a href="https://github.com/eaponte" target="_blank">
+						<svg width="128" height="128" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill="#E7E7E7" fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/>
+						</svg>
+						<span>https://github.com/eaponte</span>
+					</a>
 				</li>
 			</ul>
 
-			<div class="clr"></div>
+		</div>
 
-		</footer> <!-- contact -->
+		<div class="contact__footnote">
+			Copyright &copy; <span>Ed Aponte</span>. All rights reserved.
+		</div>
 
-	</div> <!-- container -->
+	</section>
 
-	<!-- ********** Rates Modal ********** -->
-
-	<div class="rates-modal-wrapper">
-
-		<div class="rates-modal  bg-color1">
-
-			<div class="rates-modal-header">
-				<div class="close-modal-btn">&times;</div>
-			</div>
-
-			<div class="rates-modal-body">
-			
-				<h3>Web Design for Small Business &amp; Personal Use</h3>
-
-				<h3>Rates &amp; Pricing</h3>
-
-					<p>
-						<strong>Please Note:</strong> All rates are subject to change without notice.
-					</p>
-
-					<div class="pricing-col-1">
-						
-						<header>
-							<h2>$500.00</h2>
-							<h2>Standard Site</h2>
-						</header>
-
-						<p>This includes:</p>
-
-						<ul>
-							<li>a 1 to 4 page website or</li>
-							<li>1-page layout with up to 4 sections</li>
-							<li><strong>$250.00</strong> due up front</li>
-						</ul>
-
-					</div> <!-- pricing-col-1 -->
-
-					<div class="pricing-col-2">
-						
-						<header>
-							<h2>$700.00</h2>
-							<h2>WordPress Site</h2>
-						</header>
-
-						<p>This includes:</p>
-
-						<ul>
-							<li>a 1 to 4 page website or</li>
-							<li>1-page layout with up to 4 sections</li>
-							<li><strong>$400.00</strong> due up front</li>
-						</ul>
-
-						<p style="font-size: 16px;">
-							Unlike a standard website, WordPress sites allow you, the customer, to make edits to your own content. You can add or remove paragraphs, insert or delete images, create news events, or make blog entries. The increased cost of developing a WordPress site allows you to have more control over your own content without incurring the additional costs of having a developer make content related changes to your site in the future.
-						</p>
-
-					</div> <!-- pricing-col-2 -->
-
-					<div class="clr"></div>
-
-					<p>
-						Each additional page (of a multi-page site) or section (of a one-page layout) is <strong>$90.00</strong>
-					</p>
-
-					<p>
-						Major edit changes are charged at <strong>$35.00</strong> per hour.<br>
-						Minor edits to color, content and images <strong>of a standard website</strong> are <strong>ALWAYS FREE!</strong>
-					</p>
-
-					<p>
-						<strong>Responsive Design</strong> - Websites that adjust to look good on tablets, smartphones and iPhones is included <strong>FREE</strong> with your purchase!
-					</p>
-
-					<p>
-						<strong>Please Note:</strong> Any additional costs for website hosting and domain name purchase are your responsibility and is charged to you by the web hosting company you choose.  These are reasonable costs that can start for as little as $40 per YEAR on average (or about $3.50 per month).
-					</p>
-
-				<h3><span>Contact me at </span><span class="email" style="text-transform: none; color: #7AE2DE;"></span></h3>
-
-			</div> <!-- rates-modal-body -->
-
-		</div> <!-- rates-modal -->
-
-	</div> <!-- modal-wrapper -->
-
-	<script src="js/jquery-min.js"></script>
-
-	<script src="js/wow.js"></script>
 	<script>
 
-		new WOW().init();
+		// Nav
+
+		const navToggle = document.querySelector('.header__nav-toggle');
+		const navLinks = document.querySelectorAll('.header__nav-link');
+
+		navToggle.addEventListener('click', () => {
+			document.querySelector('.header').classList.toggle('nav-open');
+			document.querySelector('body').classList.toggle('overflow-hidden');
+		});
+
+		navLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				document.querySelector('.header').classList.remove('nav-open');
+				document.querySelector('body').classList.remove('overflow-hidden');
+			});
+		});
+
+		// Email
+
+		const email1 = "eaponte";
+		const email2 = "zoho";
+		const email3 = "com";
+		document.getElementById("eml").innerHTML = email1 + '&#64;' + email2 + '&#46;' + email3;
+		document.getElementById("eml-link").href = 'mailto:' + email1 + '@' + email2 + '.' + email3;
 
 	</script>
-
-	<script src="js/main.js"></script>
-
+	
 </body>
 </html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
+
+:root {
+	--clr-purple: #573EDE;
+	--clr-hero-purple: #6E00FF;
+	--clr-light: #FFF;
+	--clr-dark: #000;
+	--clr-charcoal: #5B5B5B;
+	--clr-light-gray: #E7E7E7;
+	--clr-very-light-gray: #FAFAFA;
+	--clr-tan: #F3EFE0;
+	--clr-green: #22A39F;
+	--clr-bx-shadow-gray: rgba(0, 0, 0, 0.15);
+
+	--fs-default: 16px;
+	--fs-regular: 1rem;
+	--fs-md1: 1.1rem;
+	--fs-md2: 1.3rem;
+	--fs-lg: 1.5rem;
+	
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: var(--fs-default);
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+html, body, h1, h2, h3, ul, li, p {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+section {
+	text-align: center;
+	padding: 6.875rem 2rem;
+}
+
+.title {
+	color: var(--clr-charcoal);
+}
+
+.section--title {
+	display: inline-block;
+	position: relative;
+	font-size: var(--fs-lg);
+	letter-spacing: .2rem;
+	margin-bottom: 4rem;
+
+	&::after {
+		content: "";
+		display: block;
+		position: relative;
+		top: 10px;
+		left: -.1rem;
+		width: 85%;
+		height: 4px;
+		margin: auto;
+		background-color: var(--clr-green);
+	}
+}
+
+.inner {
+	max-width: 1400px;
+	margin: auto;
+
+	&__subtitle {
+		text-transform: uppercase;
+		font-size: var(--fs-md1);
+		font-weight: 700;
+		letter-spacing: .2rem;
+		color: var(--clr-green);
+	}
+
+	&__name {
+		margin-top: .75rem;
+		color: var(--clr-dark);
+		font-weight: 700;
+		font-size: var(--fs-md2);
+	}
+
+	&__desc {
+		color: var(--clr-charcoal);
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		font-size: var(--fs-md1);
+		line-height: 1.8rem;
+	}
+
+	&__highlights {
+		font-size: var(--fs-regular);
+		font-weight: 300;
+		color: var(--clr-purple);
+		margin-bottom: 1.5rem;
+	}
+
+	&__site-link {
+		display: inline-block;
+		padding: .375rem .75rem;
+		margin-bottom: 1.5rem;
+		border: 1px solid var(--clr-purple);
+		border-radius: 5px;
+		color: var(--clr-light);
+		font-size: var(--fs-md1);
+		background-color: var(--clr-purple);
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: var(--clr-purple);
+			background-color: unset;
+		}
+	}
+}
