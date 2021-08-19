@@ -1,0 +1,78 @@
+.resume {
+	background-color: var(--clr-very-light-gray);
+	
+	&__timeline {
+		text-align: left;
+		color: var(--clr-charcoal);
+		font-weight: 300;;
+	}
+
+	&__item {
+		position: relative;
+		border-left: 2px solid var(--clr-purple);
+		margin-top: 14px;
+		padding-left: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		&:last-child {
+			padding-bottom: unset;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 10px;
+			height: 10px;
+			top: -14px;
+			left: -8px;
+			background-color: transparent;
+			border: 2px solid var(--clr-purple);
+			transition: background-color 250ms ease-in-out;
+		}
+
+		&:hover::before {
+			background-color: var(--clr-purple);
+		}
+
+		.timeline-content {
+			position: relative;
+			top: -14px;
+			left: 0;
+			padding: 1rem;
+			background-color: var(--clr-light-gray);
+			transition: all 250ms ease-in-out;
+
+			.time, .title {
+				margin-bottom: .9rem;
+			}
+
+			.place {
+				font-weight: 700;
+				font-size: var(--fs-regular);
+				letter-spacing: .2rem;
+				color: var(--clr-green);
+			}
+
+			.title {
+				font-weight: 700;
+				letter-spacing: .1rem;
+			}
+			.job-desc p:first-child {
+				margin-bottom: .5rem;
+			}
+		}
+
+		&:hover .timeline-content {
+			left: .5rem;
+		}
+	}
+
+	.inner {
+
+		.resume__download {
+			margin-top: 6rem;
+		}
+
+	}
+	
+}
