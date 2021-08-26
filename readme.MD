@@ -1,4 +1,4 @@
 Portfolio site for Ed Aponte
 
 
-- Direct link at http://eaponte.com
+- Direct link at https://eaponte.com
