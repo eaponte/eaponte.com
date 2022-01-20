@@ -1,4 +1,4 @@
-.resume {
+.resume, .skills {
 	background-color: var(--clr-very-light-gray);
 	
 	&__timeline {
@@ -46,18 +46,23 @@
 				margin-bottom: .9rem;
 			}
 
-			.place {
+			.place, .skill-group {
 				font-weight: 700;
 				font-size: var(--fs-regular);
 				letter-spacing: .2rem;
 				color: var(--clr-green);
 			}
 
-			.title {
+			.title, .skill-desc {
 				font-weight: 700;
 				letter-spacing: .1rem;
 			}
-			.job-desc p:first-child {
+
+			.skill-desc {
+				padding-left: .5rem;
+			}
+
+			.job-desc p:first-child, .skill-group {
 				margin-bottom: .5rem;
 			}
 		}

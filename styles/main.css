@@ -555,17 +555,17 @@ section {
           box-shadow: 0 3px 12px var(--clr-bx-shadow-gray);
 }
 
-.resume {
+.resume, .skills {
   background-color: var(--clr-very-light-gray);
 }
 
-.resume__timeline {
+.resume__timeline, .skills__timeline {
   text-align: left;
   color: var(--clr-charcoal);
   font-weight: 300;
 }
 
-.resume__item {
+.resume__item, .skills__item {
   position: relative;
   border-left: 2px solid var(--clr-purple);
   margin-top: 14px;
@@ -573,11 +573,11 @@ section {
   padding-bottom: 1.5rem;
 }
 
-.resume__item:last-child {
+.resume__item:last-child, .skills__item:last-child {
   padding-bottom: unset;
 }
 
-.resume__item::before {
+.resume__item::before, .skills__item::before {
   position: absolute;
   content: "";
   width: 10px;
@@ -590,11 +590,11 @@ section {
   transition: background-color 250ms ease-in-out;
 }
 
-.resume__item:hover::before {
+.resume__item:hover::before, .skills__item:hover::before {
   background-color: var(--clr-purple);
 }
 
-.resume__item .timeline-content {
+.resume__item .timeline-content, .skills__item .timeline-content {
   position: relative;
   top: -14px;
   left: 0;
@@ -604,31 +604,35 @@ section {
   transition: all 250ms ease-in-out;
 }
 
-.resume__item .timeline-content .time, .resume__item .timeline-content .title {
+.resume__item .timeline-content .time, .resume__item .timeline-content .title, .skills__item .timeline-content .time, .skills__item .timeline-content .title {
   margin-bottom: .9rem;
 }
 
-.resume__item .timeline-content .place {
+.resume__item .timeline-content .place, .resume__item .timeline-content .skill-group, .skills__item .timeline-content .place, .skills__item .timeline-content .skill-group {
   font-weight: 700;
   font-size: var(--fs-regular);
   letter-spacing: .2rem;
   color: var(--clr-green);
 }
 
-.resume__item .timeline-content .title {
+.resume__item .timeline-content .title, .resume__item .timeline-content .skill-desc, .skills__item .timeline-content .title, .skills__item .timeline-content .skill-desc {
   font-weight: 700;
   letter-spacing: .1rem;
 }
 
-.resume__item .timeline-content .job-desc p:first-child {
+.resume__item .timeline-content .skill-desc, .skills__item .timeline-content .skill-desc {
+  padding-left: .5rem;
+}
+
+.resume__item .timeline-content .job-desc p:first-child, .resume__item .timeline-content .skill-group, .skills__item .timeline-content .job-desc p:first-child, .skills__item .timeline-content .skill-group {
   margin-bottom: .5rem;
 }
 
-.resume__item:hover .timeline-content {
+.resume__item:hover .timeline-content, .skills__item:hover .timeline-content {
   left: .5rem;
 }
 
-.resume .inner .resume__download {
+.resume .inner .resume__download, .skills .inner .resume__download {
   margin-top: 6rem;
 }
 
